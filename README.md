@@ -37,3 +37,11 @@ Optional: limit={limit}
 Adjust number of meetings returned
 Optional: boardId={boardId}
 Filter next meetings by boardId
+
+### Previous
+/meetings/previous
+Get 10 previous meetings
+Optional: limit={limit}
+Adjust number of meetings returned
+Optional: boardId={boardId}
+Filter previous meetings by boardId

@@ -50,5 +50,13 @@ module.exports = [
       handler: Handlers.handleMeetingsNext,
       description: 'Show next meetings'
     }
+  },
+  {
+    method: 'GET',
+    path: '/meetings/previous',
+    config: {
+      handler: Handlers.handleMeetingsPrevious,
+      description: 'Show previous meetings'
+    }
   }
 ]

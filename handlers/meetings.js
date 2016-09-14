@@ -35,7 +35,7 @@ module.exports.handleMeetingsCalendar = (request, reply) => {
   if (boardId) {
     query.boardId = boardId
   }
-  meetings.find(query, (error, data) => {
+  meetings.find(query).sort({yearMonthDay: 1}, (error, data) => {
     reply(error || data)
   })
 }
@@ -54,7 +54,26 @@ module.exports.handleMeetingsNext = (request, reply) => {
   if (boardId) {
     query.boardId = boardId
   }
-  meetings.find(query).limit(limit, (error, data) => {
+  meetings.find(query).limit(limit).sort({yearMonthDay: 1}, (error, data) => {
+    reply(error || data)
+  })
+}
+
+module.exports.handleMeetingsPrevious = (request, reply) => {
+  const now = new Date()
+  const year = now.getFullYear()
+  const month = datePadding(now.getMonth() + 1)
+  const day = datePadding(now.getDate())
+  const yearMonthDay = parseInt(`${year}${month}${day}`, 10)
+  const limit = request.query.limit ? parseInt(request.query.limit, 10) : 10
+  const boardId = request.query.boardId
+  var query = {
+    yearMonthDay: {'$lte': yearMonthDay}
+  }
+  if (boardId) {
+    query.boardId = boardId
+  }
+  meetings.find(query).limit(limit).sort({yearMonthDay: -1}, (error, data) => {
     reply(error || data)
   })
 }
