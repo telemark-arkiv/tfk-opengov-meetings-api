@@ -17,11 +17,6 @@ All meetings for given year
 Optional: boardId={boardId}
 Filter meetings by boardId
 
-/meetings/calendar/year/{year}
-All meetings for given year
-Optional: boardId={boardId}
-Filter meetings by boardId
-
 /meetings/calendar/year/{year}/month/{month}
 All meetings a given month in a given year
 Optional: boardId={boardId}
