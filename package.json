@@ -18,7 +18,7 @@
     "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
     "setup": "npm install && node setup.js",
     "standard-fix": "standard --fix",
-    "start": "node index.js",
+    "start": "node standalone.js",
     "import-data": "node utils/import-data.js"
   },
   "keywords": [
@@ -40,6 +40,11 @@
     "tap": "7.1.2"
   },
   "dependencies": {
-    "mongojs": "2.4.0"
+    "hapi": "15.0.3",
+    "inert": "4.0.2",
+    "joi": "9.0.4",
+    "lout": "9.1.0",
+    "mongojs": "2.4.0",
+    "vision": "4.1.0"
   }
 }

@@ -15,13 +15,18 @@ One given meeting
 ### Calendar
 API-endpoints for creating calendars
 
-/meetings/calendar/year/{year}
+/meetings/calendar/{year}
 All meetings for given year
 Optional: boardId={boardId}
 Filter meetings by boardId
 
-/meetings/calendar/year/{year}/month/{month}
+/meetings/calendar/{year}/{month}
 All meetings a given month in a given year
+Optional: boardId={boardId}
+Filter meetings by boardId
+
+/meetings/calendar/{year}/{month}/{day}
+All meetings a given day in a given month a given year
 Optional: boardId={boardId}
 Filter meetings by boardId
 

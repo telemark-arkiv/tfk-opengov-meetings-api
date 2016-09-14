@@ -3,7 +3,7 @@
 const mongojs = require('mongojs')
 const datePadding = require('../lib/date-padding')
 const config = require('../config')
-const dbOpengov = mongojs(config.OPENGOV_DB_CONNECTION_MEETINGS)
+const dbOpengov = mongojs(config.OPENGOV_MEETINGS_DB_CONNECTION)
 const meetings = dbOpengov.collection('meetings')
 
 module.exports.handleMeetings = (request, reply) => {
@@ -20,13 +20,17 @@ module.exports.handleMeetings = (request, reply) => {
 module.exports.handleMeetingsCalendar = (request, reply) => {
   const year = request.params.year
   const month = request.params.month
+  const day = request.params.day
   const boardId = request.query.boardId
   var query = {}
   if (year) {
     query.year = parseInt(year, 10)
   }
   if (month) {
-    query.month = month
+    query.month = datePadding(month)
+  }
+  if (day) {
+    query.day = datePadding(day)
   }
   if (boardId) {
     query.boardId = boardId
