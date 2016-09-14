@@ -1,8 +1,11 @@
+[![Build Status](https://travis-ci.org/telemark/tfk-opengov-meetings-api.svg?branch=master)](https://travis-ci.org/telemark/tfk-opengov-meetings-api)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 # tfk-opengov-meetings-api
 API for opengov meetings
 
 ## API
 
+### Meetings
 /meetings
 All meetings
 
