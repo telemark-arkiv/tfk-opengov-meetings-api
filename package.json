@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "hapi": "16.0.3",
-    "inert": "4.0.4",
+    "inert": "4.1.0",
     "joi": "10.1.0",
     "lout": "9.2.0",
     "mongojs": "2.4.0",
