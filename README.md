@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/telemark/tfk-opengov-meetings-api.svg?branch=master)](https://travis-ci.org/telemark/tfk-opengov-meetings-api)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 # tfk-opengov-meetings-api
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/tfk-opengov-meetings-api.svg)](https://greenkeeper.io/)
 API for opengov meetings
 
 ## API
