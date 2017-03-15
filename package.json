@@ -1,7 +1,7 @@
 {
   "name": "tfk-opengov-meetings-api",
   "description": "API for opengov meetings",
-  "version": "1.0.22",
+  "version": "",
   "license": "MIT",
   "author": {
     "name": "Geir Gåsodden",
