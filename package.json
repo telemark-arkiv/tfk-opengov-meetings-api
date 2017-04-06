@@ -3,6 +3,7 @@
   "description": "API for opengov meetings",
   "version": "2.0.14",
   "license": "MIT",
+  "private": true,
   "author": {
     "name": "Geir Gåsodden",
     "email": "geir.gasodden@pythonia.no",
