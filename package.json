@@ -35,7 +35,7 @@
     "url": "http://github.com/zrrrzzt/tfk-opengov-meetings-api/issues"
   },
   "devDependencies": {
-    "coveralls": "2.13.0",
+    "coveralls": "2.13.1",
     "nsp": "2.6.3",
     "tap": "10.3.2"
   },
