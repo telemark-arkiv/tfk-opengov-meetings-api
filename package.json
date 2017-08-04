@@ -1,7 +1,7 @@
 {
   "name": "tfk-opengov-meetings-api",
   "description": "API for opengov meetings",
-  "version": "2.0.34",
+  "version": "2.0.35",
   "license": "MIT",
   "private": true,
   "author": {
@@ -40,7 +40,7 @@
     "tap": "10.7.1"
   },
   "dependencies": {
-    "hapi": "16.5.2",
+    "hapi": "16.5.0",
     "inert": "4.2.1",
     "joi": "10.6.0",
     "lout": "10.0.2",
