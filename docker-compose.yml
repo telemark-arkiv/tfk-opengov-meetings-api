@@ -8,7 +8,7 @@ apiserver:
   links:
    - dbserver
 dbserver:
-  image: mongo:3.2.9@sha256:d0c2d118a28778514fc3478bf69f603aac961ec93c7988639fb7b994b0887fb6
+  image: mongo:3.7.9@sha256:e6f5c2185eb64e0eb4c3d8ef8a903ad0fff0e2554b1bc03c8b1bb25103882102
   environment:
     DB: opengov
     COLLECTION: meetings
