@@ -1,5 +1,5 @@
 apiserver:
-  image: telemark/tfk-opengov-meetings-api:latest@sha256:f7ee6ae3b64ff1a5d0943282331d840b8bcf510ef0d13a4d9fe3fdbd020e17c5
+  image: telemark/tfk-opengov-meetings-api:latest@sha256:f347ce7f20c772fc6efc291632cbc899812abcfd0a45915292e85bd2c5ef1139
   environment:
     OPENGOV_MEETINGS_SERVER_PORT: 8000
     OPENGOV_MEETINGS_DB_CONNECTION: mongodb://dbserver/opengov
