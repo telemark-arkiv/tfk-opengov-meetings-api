@@ -29,10 +29,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/zrrrzzt/tfk-opengov-meetings-api.git"
+    "url": "https://github.com/zrrrzzt/tfk-opengov-meetings-api.git"
   },
   "bugs": {
-    "url": "http://github.com/zrrrzzt/tfk-opengov-meetings-api/issues"
+    "url": "https://github.com/zrrrzzt/tfk-opengov-meetings-api/issues"
   },
   "devDependencies": {
     "coveralls": "3.0.2",
