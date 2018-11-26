@@ -1,28 +1,11 @@
-###########################################################
-#
-# Dockerfile for tfk-opengov-meetings-api
-#
-###########################################################
-
-# Setting the base to nodejs 4.6.0
-FROM mhart/alpine-node:4.9.1@sha256:c47433a256be0bc5314eb8288ea8fae7466d283d91f1da7ff950f91e43838b33
-
-# Maintainer
-MAINTAINER Geir Gåsodden
-
-#### Begin setup ####
-
-# Installs git
+FROM mhart/alpine-node:10 as base
 RUN apk add --update git && rm -rf /var/cache/apk/*
+WORKDIR /usr/src
+COPY package.json package-lock.json /usr/src/
+RUN npm i --production
+COPY . .
 
-# Bundle app source
-COPY . /src
-
-# Change working directory
-WORKDIR "/src"
-
-# Install dependencies
-RUN npm install --production
-
-# Startup
-ENTRYPOINT node standalone.js
+FROM mhart/alpine-node:base-10
+WORKDIR /usr/src
+COPY --from=base /usr/src .
+CMD ["node", "standalone.js"]
