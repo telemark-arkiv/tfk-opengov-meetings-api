@@ -18,10 +18,10 @@ server.connection({
 })
 
 const plugins = [
-  {register: vision},
-  {register: inert},
-  {register: lout},
-  {register: meetingsService}
+  { register: vision },
+  { register: inert },
+  { register: lout },
+  { register: meetingsService }
 ]
 
 server.register(plugins, error => {
